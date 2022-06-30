@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/alibaba-gateway/alibaba-gateway.iml" filepath="$PROJECT_DIR$/alibaba-gateway/alibaba-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-nacos/config-nacos.iml" filepath="$PROJECT_DIR$/config-nacos/config-nacos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-nacos/order (1).iml" filepath="$PROJECT_DIR$/order-nacos/order (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-openfegin/order-openfegin.iml" filepath="$PROJECT_DIR$/order-openfegin/order-openfegin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-openfegin-sentinel/order-openfegin-sentinel.iml" filepath="$PROJECT_DIR$/order-openfegin-sentinel/order-openfegin-sentinel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-ribbon/order-ribbon.iml" filepath="$PROJECT_DIR$/order-ribbon/order-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seata/order-seata/order-seata.iml" filepath="$PROJECT_DIR$/seata/order-seata/order-seata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-sentinel/order-sentinel.iml" filepath="$PROJECT_DIR$/order-sentinel/order-sentinel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seata/seata.iml" filepath="$PROJECT_DIR$/seata/seata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo.iml" filepath="$PROJECT_DIR$/sentinel-demo/sentinel-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloudalibaba.iml" filepath="$PROJECT_DIR$/springcloudalibaba.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stock-nacos/stock (1).iml" filepath="$PROJECT_DIR$/stock-nacos/stock (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/seata/stock-seata/stockseata.iml" filepath="$PROJECT_DIR$/seata/stock-seata/stockseata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zxing/zxing.iml" filepath="$PROJECT_DIR$/zxing/zxing.iml" />
+    </modules>
+  </component>
+</project>

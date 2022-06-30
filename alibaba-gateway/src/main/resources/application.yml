@@ -1,0 +1,17 @@
+server:
+  port: 8074
+#应用名称（nacos会将该名称当作服务名称）
+spring:
+  application:
+    name: order-gateway
+  cloud:
+    gateway:
+      discovery:
+        enabled: true #开启注册中心路由功能
+      routes: #路由数组[路由 就是指定当请求满足什么条件的时候转到哪个微服务]
+        -id: order #当前路由的标识, 要求唯一
+        uri: lb://order-service #请求要转发到的地址
+        predicates: # 断言(就是路由转发要满足的条件)
+          -Path=/order-service/** # 当请求路径满足Path指定的规则时,才进行路由转发
+        filters:  # 过滤器,请求在传递过程中可以通过过滤器对其进行一定的修改
+          -StripPrefix=1 # 转发之前去掉1层路径.

@@ -1,0 +1,12 @@
+server:
+  port: 8070
+
+#应用名称（nacos会将该名称当作服务名称）
+spring:
+  application:
+    name: order-sentinel
+  cloud:
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8858
+      web-context-unify: false #默认将调用链路收敛  可以直接流控到方法

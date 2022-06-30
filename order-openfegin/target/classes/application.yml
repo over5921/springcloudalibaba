@@ -1,0 +1,27 @@
+server:
+  port: 8040
+
+#应用名称（nacos会将该名称当作服务名称）
+spring:
+  application:
+    name: order_openfegin
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+logging:
+  level:
+    com.over.order.fegin: debug
+
+#局部配置可以在yml中配置
+feign:
+  client:
+    config:
+      stock-service: #对应微服务
+        loggerLevel: BASIC #日志级别
+        connectTimeout: 5000 #连接超时时间，默认2s
+        readTimeout: 10000 #请求处理超时时间，默认5s
+#        requestInterceptors[0]:
+#          com.over.order.intercptor.fegin.CustomFeginInterceptor  #配置自定义拦截器
+
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="alibaba-gateway" />
+        <module name="config-nacos" />
+        <module name="order (1)" />
+        <module name="order-openfegin" />
+        <module name="order-openfegin-sentinel" />
+        <module name="order-ribbon" />
+        <module name="order-seata" />
+        <module name="order-sentinel" />
+        <module name="sentinel-demo" />
+        <module name="stock (1)" />
+        <module name="stockseata" />
+        <module name="zxing" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="alibaba-gateway" target="1.8" />
+      <module name="config-nacos" target="1.8" />
+      <module name="order" target="1.8" />
+      <module name="order (1)" target="1.8" />
+      <module name="order-nacos" target="1.8" />
+      <module name="order-openfegin" target="1.8" />
+      <module name="order-openfegin-sentinel" target="1.8" />
+      <module name="order-ribbon" target="1.8" />
+      <module name="order-seata" target="1.8" />
+      <module name="order-sentinel" target="1.8" />
+      <module name="seata" target="1.8" />
+      <module name="sentinel-demo" target="1.8" />
+      <module name="springcloudalibaba" target="1.8" />
+      <module name="stock" target="1.8" />
+      <module name="stock (1)" target="1.8" />
+      <module name="stockseata" target="1.8" />
+      <module name="zxing" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="alibaba-gateway" options="-parameters" />
+      <module name="config-nacos" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="order (1)" options="-parameters" />
+      <module name="order-nacos" options="-parameters" />
+      <module name="order-openfegin" options="-parameters" />
+      <module name="order-openfegin-sentinel" options="-parameters" />
+      <module name="order-ribbon" options="-parameters" />
+      <module name="order-seata" options="-parameters" />
+      <module name="order-sentinel" options="-parameters" />
+      <module name="sentinel-demo" options="-parameters" />
+      <module name="springcloudalibaba" options="-parameters" />
+      <module name="stock" options="-parameters" />
+      <module name="stock (1)" options="-parameters" />
+      <module name="stockseata" options="-parameters" />
+      <module name="zxing" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,25 @@
+server:
+  port: 8030
+
+#应用名称（nacos会将该名称当作服务名称）
+spring:
+  application:
+    name: order_ribbon
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+# 被调用的微服务名
+stock-service:
+  ribbon:
+    # 指定使用Nacos提供的负载均衡策略（优先调用同一集群的实例，基于随机&权重）
+#    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule
+    #  轮询
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+    #自定义的负载均衡策略（基于随机&权重）
+    NFLoadBalancerRuleClassName: com.over.order.ribbon.NacosRandomWithWeightRule
+    eager-load:
+      enable: true  #开启ribbon饥饿加载 ，解决第一次调用慢的问题
+      clients: stock-service #配置stock-service使用ribbon饥饿加载，多个使用逗号分隔
+

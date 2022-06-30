@@ -1,0 +1,14 @@
+server:
+  port: 8071
+
+#应用名称（nacos会将该名称当作服务名称）
+spring:
+  application:
+    name: order_openfegin_sentinel
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+feign:
+  sentinel:
+    enabled: true  #添加fegin对sentinel的支持

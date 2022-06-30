@@ -1,0 +1,52 @@
+server:
+  port: 8072
+spring:
+  application:
+    name: order_service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/seat-order?serverTimezone=Asia/Shanghai&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+#logging:
+#  level:
+#    com.over.order.fegin: debug
+
+# mybatis xxxMapper.xml路径
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+
+
+seata:
+  registry:
+    #配置seata的注册中心
+    type: nacos
+    nacos:
+      server-addr: 127.0.0.1:8848 #seata server 所在nacos 的服务地址
+      application: seata-server #seata server 的服务名 没有修改可不配
+      username: nacos
+      password: nacos
+#      group: SEATA_GROUP #seata server 所在的组 没有修改可不配
+      #seata 的配置中心
+  config:
+    type: nacos
+    nacos:
+      server-addr: 127.0.0.1:8848
+      username: nacos
+      password: nacos
+
+
+#局部配置可以在yml中配置
+feign:
+  client:
+    config:
+      stock-service: #对应微服务
+        loggerLevel: BASIC #日志级别
+        connectTimeout: 5000 #连接超时时间，默认2s
+        readTimeout: 10000 #请求处理超时时间，默认5s
+
+

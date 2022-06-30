@@ -1,0 +1,14 @@
+spring:
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    mode: HTML5
+    prefix: classpath:/agcim/viewer/ui/
+    servlet:
+      content-type: text/html
+    suffix: .html
+  application:
+    name: zxing-service
+
+server:
+  port: 8078
